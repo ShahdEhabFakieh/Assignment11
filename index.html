@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="Logo" width="40" height="24" class="d-inline-block align-text-top">
+                Weather
+                <br>
+                <span class="smallp">Tagline goes here</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon custom-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-space-between">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <button class="btn btn-outline-primary">Home</button>
+                        </a>
+                    </li>
+                    <li class="nav-item-one">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item-one">
+                        <a class="nav-link" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item-one">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item-one">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="Home">
+        <div class="container px-3 py-5 text-center Find-box">
+            <input type="text" class="find w-100 mx-auto rounded-5 py-3 px-4  mb-5 bg-dark text-white"
+                placeholder="Find your location..." id="search">
+            <input type="button" value="Find" id="submit">
+            <div class="row">
+                <div class="card-group">
+                    <div class="card text-bg-secondary">
+                        <div class="card-header d-flex justify-content-between">
+                            <p id="Date_name">wednesday</p>
+                            <small id="Date_number_month">19 Aug</small>
+                        </div>
+                        <div class="card-body text-start">
+                            <div class="weather-info">
+                                <h6 class="card-title" id="today_location"></h6>
+                                <div class="weather-info d-flex justify-content-between align-items-center">
+                                    <h1 id="today_Temp">35</h1><span class="weather-icon"><img id="today_condition_icon"
+                                            src="./images/116.png" alt=""></span>
+                                </div>
+                                <p class="caption_span fs-6 text-blue" id="condition_text">Partly cloudy
+                                <p>
+                                <div class="footer-imgs">
+                                    <img src="./images/icon-umberella.png" alt="umbrella icon"> 20%
+                                    <img src="./images/icon-wind.png" alt=""> 18km/h
+                                    <img src="./images/icon-compass.png" alt=""> East
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            <small id="nextDay_name">Sunday</small>
+                        </div>
+                        <div class="card-body text-start text-center">
+                            <img class="pb-3" id="next_condition_icon" src="./images/113.png" alt="">
+                            <h5 class="card-title" id="next_max_temp">35.7</h5>
+                            <p class="card-title" id="next_min_temp">32.2</p>
+                            <p class="caption_span fs-6 text-light-blue" id="next_condition_text">Sunny</p>
+                        </div>
+
+                    </div>
+                    <div class="card text-bg-secondary">
+                        <div class="card-header">
+                            <small id="after_nextDay_name">Monday</small>
+                        </div>
+                        <div class="card-body text-start text-center">
+                            <img class="pb-3" id="after_next_condition_icon" src="./images/113.png" alt="">
+                            <h5 class="card-title" id="after_next_max_temp">35.7</h5>
+                            <p class="card-title" id="after_next_min_temp">32.2</p>
+                            <p class="caption_span fs-6 text-light-blue" id="after_next_condition_text">Sunny</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="subscribe_box col-md-8">
+                    <input type="text" class="Subscribe w-100 mx-auto rounded-5 py-3 px-4  mb-5 bg-dark text-white mt-4"
+                        placeholder="Enter your email to subscribe...">
+                    <input type="submit" value="Subscribe">
+                </div>
+                <div class="col-md-4">
+                    <div class="social_icons">
+                        <span class="social_icn"><i class="fa-brands fa-facebook fa-lg"></i></span> <span
+                            class="social_icn"><i class="fa-brands fa-twitter fa-lg"></i></span> <span
+                            class="social_icn"><i class="fa-brands fa-google-plus fa-lg"></i></span> <span
+                            class="social_icn"><i class="fa-brands fa-pinterest fa-lg"></i></span>
+                    </div>
+                </div>
+            </div>
+            <p class="subscribe_caption text-white mt-4">
+                Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
