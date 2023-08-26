@@ -30,7 +30,7 @@ searchInput.addEventListener("input", function() {
 
 /******  Fetching Data ******/
 async function getWeatherInfo(cityName) {
-    let weatherResponse = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=3006364a437149c4b67131132232308&days=3&q=${cityName}`)
+    let weatherResponse = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=3006364a437149c4b67131132232308&days=3&q=${cityName}`)
     let weatherData = await weatherResponse.json()
     bindDataInsideHtml(weatherData)
 }
